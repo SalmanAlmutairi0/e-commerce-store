@@ -26,7 +26,6 @@ export default function Cart({ cart, setCart }) {
     getAllProducts();
   }, [cart]);
 
-  // Function to update quantity for a specific product
   
 
   return (
