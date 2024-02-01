@@ -35,7 +35,7 @@ export default function Cart({ cart, setCart }) {
         <div className="flex w-4/5 flex-col items-center gap-10">
           {/* if cart is empty */}
           {products.length === 0 && (
-            <>
+            <div className="fixed right-[46%] flex flex-col items-center justify-center">
               <p>Your Cart is Empty (:</p>
 
               <Link to="/">
@@ -43,7 +43,7 @@ export default function Cart({ cart, setCart }) {
                   Start Shopping 🛍️
                 </button>
               </Link>
-            </>
+            </div>
           )}
 
           {/* render added products */}
