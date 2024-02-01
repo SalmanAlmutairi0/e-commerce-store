@@ -16,7 +16,6 @@ export default function App() {
         <Route path="/details/:id" element={<Details setCart={setCart} />} />
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
       </Routes>
-
     </>
   );
 }

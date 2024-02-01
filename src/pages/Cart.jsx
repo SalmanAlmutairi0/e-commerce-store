@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { convertNumberToArray } from "../utility";
 import LoadingScreen from "../components/UI/LoadingScreen";
 import { Link } from "react-router-dom";
 import OrderSummary from "../components/OrderSummary";
@@ -25,8 +24,6 @@ export default function Cart({ cart, setCart }) {
 
     getAllProducts();
   }, [cart]);
-
-  
 
   return (
     <div className="my-5 flex w-full flex-col items-center gap-16">

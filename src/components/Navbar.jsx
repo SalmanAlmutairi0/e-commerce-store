@@ -5,9 +5,8 @@ import cartIcon from "../assets/icons/cart-icon.png";
 import logout from "../assets/icons/logout-icon.png";
 import { Link } from "react-router-dom";
 export default function Navbar({ cart }) {
-
   return (
-    <div className="fixed top-4 left-3 h-screen ">
+    <div className="fixed left-3 top-4 h-screen ">
       <nav className=" flex h-[95%] w-fit flex-col items-center justify-between rounded-xl bg-white p-2 shadow-xl">
         <div className="flex flex-col items-center gap-10 rounded-md">
           <Link to="/">
@@ -33,12 +32,9 @@ export default function Navbar({ cart }) {
                       {cart.length}
                     </p>
                   )}
-
                 </div>
               </li>
-              
             </Link>
-
           </ul>
         </div>
 

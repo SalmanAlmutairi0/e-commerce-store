@@ -21,8 +21,6 @@ export default function Details({ setCart }) {
     getProduct(productId);
   }, [productId]);
 
-
-
   const rating = convertNumberToArray(Math.floor(product.rating?.rate));
 
   return (
